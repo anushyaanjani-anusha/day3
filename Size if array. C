@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+void printEvenNumbers(int arr[], int size) {
+    printf("Even numbers in the array are:\n");
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+    printf("\n");
+}
+
+int main() {
+    int numbers[6];
+    printf("Enter 10 integers:\n");
+    for (int i = 0; i < 6; i++) {
+        printf("Number %d: ", i + 1);
+        scanf("%d", &numbers[i]);
+    }
+    printEvenNumbers(numbers, 6);
+
+    return 0;
+}
