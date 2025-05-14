@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+int square(int num){
+return num*num;
+}
+int main (){
+    int num=6;
+    int result=square (num);
+    printf ("the square of: %d%d\n",num, result);
+    return 0;
+}
